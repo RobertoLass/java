@@ -15,6 +15,7 @@ public class Players {
 	private boolean teamLeader;	
 	private String nationality;
 	private String gender;
+	private static int playersPerTeam=0;
 	
 	/**
 	 * Konstruktor zum Generierung eines Spielers
@@ -27,6 +28,10 @@ public class Players {
 		this.teamLeader = teamLeader;
 		this.nationality = nationality;
 		this.gender = gender;
+		playersPerTeam += 1;
+	}
+	public static int getPlayersPerTeam() {
+		return playersPerTeam;
 	}
 	public Adresse getAdress() {
 		return adress;
