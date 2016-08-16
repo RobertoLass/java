@@ -1,7 +1,7 @@
 package oca.basics;
 
 class Peron {
-	static class Maler {
+	static class Male {
 		static String Desc = "Male";
 	}
 
@@ -15,8 +15,9 @@ class Gender {
 public class GenderDemo {
 
 	public static void main(String[] args) {
+		// Schlechter Stil--> Statische innere Klasse, gleiche Name wie das Feld vom Type Gender. // Factory? 
 		System.out.println(Peron.Male.Desc);
-		System.out.println(Peron.Maler.Desc);
+		System.out.println(Peron.Male.Desc);
 	}
 
 }
